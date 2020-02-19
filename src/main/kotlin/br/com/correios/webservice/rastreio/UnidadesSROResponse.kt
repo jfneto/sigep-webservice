@@ -8,16 +8,8 @@ import javax.xml.bind.annotation.XmlType
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(namespace = "UnidadesSROResponse", name = "UnidadesSROResponse", propOrder = ["_return"])
+@XmlType(namespace = "UnidadesSROResponse", name = "UnidadesSROResponse", propOrder = ["retorno"])
 open class UnidadesSROResponse {
     @XmlElement(name = "return")
-    protected var _return: List<RegistroUnidades>? = null
-
-    val `return`: List<RegistroUnidades>?
-        get() {
-            if (_return == null) {
-                _return = ArrayList()
-            }
-            return _return
-        }
+    var retorno: List<RegistroUnidades>? = ArrayList()
 }

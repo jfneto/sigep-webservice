@@ -22,230 +22,159 @@ import javax.xml.namespace.QName
  */
 @XmlRegistry
 class ObjectFactory{
-    /**
-     * Create an instance of [BuscaEventosLista]
-     *
-     */
-    fun createBuscaEventosLista(): BuscaEventosLista {
-        return BuscaEventosLista()
-    }
-
-    /**
-     * Create an instance of [Eventos]
-     *
-     */
-    fun createEventos(): Eventos {
-        return Eventos()
-    }
-
-    /**
-     * Create an instance of [EnderecoMobile]
-     *
-     */
-    fun createEnderecoMobile(): EnderecoMobile {
-        return EnderecoMobile()
-    }
-
-    /**
-     * Create an instance of [Sroxml]
-     *
-     */
-    fun createSroxml(): Sroxml {
-        return Sroxml()
-    }
-
-    /**
-     * Create an instance of [Objeto]
-     *
-     */
-    fun createObjeto(): Objeto {
-        return Objeto()
-    }
-
-    /**
-     * Create an instance of [BuscaEventos]
-     *
-     */
-    fun createBuscaEventos(): BuscaEventos {
-        return BuscaEventos()
-    }
-
-    /**
-     * Create an instance of [BuscaEventosListaResponse]
-     *
-     */
-    fun createBuscaEventosListaResponse(): BuscaEventosListaResponse {
-        return BuscaEventosListaResponse()
-    }
-
-    /**
-     * Create an instance of [Destinos]
-     *
-     */
-    fun createDestinos(): Destinos {
-        return Destinos()
-    }
-
-    /**
-     * Create an instance of [BuscaEventosResponse]
-     *
-     */
-    fun createBuscaEventosResponse(): BuscaEventosResponse {
-        return BuscaEventosResponse()
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[EnderecoMobile]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "endereco"
-    )
-    fun createEndereco(value: EnderecoMobile): JAXBElement<EnderecoMobile> {
-        return JAXBElement(
-            _Endereco_QNAME,
-            EnderecoMobile::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[BuscaEventosLista]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "buscaEventosLista"
-    )
-    fun createBuscaEventosLista(value: BuscaEventosLista): JAXBElement<BuscaEventosLista> {
-        return JAXBElement(
-            _BuscaEventosLista_QNAME,
-            BuscaEventosLista::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[Eventos]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "evento"
-    )
-    fun createEvento(value: Eventos): JAXBElement<Eventos> {
-        return JAXBElement(
-            _Evento_QNAME,
-            Eventos::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[BuscaEventosResponse]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "buscaEventosResponse"
-    )
-    fun createBuscaEventosResponse(value: BuscaEventosResponse): JAXBElement<BuscaEventosResponse> {
-        return JAXBElement(
-            _BuscaEventosResponse_QNAME,
-            BuscaEventosResponse::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[Sroxml]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "rastro"
-    )
-    fun createRastro(value: Sroxml): JAXBElement<Sroxml> {
-        return JAXBElement(
-            _Rastro_QNAME,
-            Sroxml::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[Objeto]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "objeto"
-    )
-    fun createObjeto(value: Objeto): JAXBElement<Objeto> {
-        return JAXBElement(
-            _Objeto_QNAME,
-            Objeto::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[BuscaEventos]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "buscaEventos"
-    )
-    fun createBuscaEventos(value: BuscaEventos): JAXBElement<BuscaEventos> {
-        return JAXBElement(
-            _BuscaEventos_QNAME,
-            BuscaEventos::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[BuscaEventosListaResponse]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "buscaEventosListaResponse"
-    )
-    fun createBuscaEventosListaResponse(value: BuscaEventosListaResponse): JAXBElement<BuscaEventosListaResponse> {
-        return JAXBElement(
-            _BuscaEventosListaResponse_QNAME,
-            BuscaEventosListaResponse::class.java,
-            null,
-            value
-        )
-    }
-
-    /**
-     * Create an instance of [JAXBElement]`<`[Destinos]`>`}
-     *
-     */
-    @XmlElementDecl(
-        namespace = "http://resource.webservice.correios.com.br/",
-        name = "destino"
-    )
-    fun createDestino(value: Destinos): JAXBElement<Destinos> {
-        return JAXBElement(
-            _Destino_QNAME,
-            Destinos::class.java,
-            null,
-            value
-        )
-    }
+//
+//    fun createBuscaEventosLista(): BuscaEventosLista {
+//        return BuscaEventosLista()
+//    }
+//
+//    fun createEventos(): Eventos {
+//        return Eventos()
+//    }
+//
+//    fun createEnderecoMobile(): EnderecoMobile {
+//        return EnderecoMobile()
+//    }
+//
+//    fun createSroxml(): EventosDosCorreios {
+//        return EventosDosCorreios()
+//    }
+//
+//    fun createObjeto(): Objeto {
+//        return Objeto()
+//    }
+//
+//    fun createBuscaEventos(): BuscaEventos {
+//        return BuscaEventos()
+//    }
+//
+//    fun createBuscaEventosListaResponse(): BuscaEventosListaResponse {
+//        return BuscaEventosListaResponse()
+//    }
+//
+//    fun createDestinos(): Destinos {
+//        return Destinos()
+//    }
+//
+//    fun createBuscaEventosResponse(): BuscaEventosResponse {
+//        return BuscaEventosResponse()
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "endereco"
+////    )
+//    fun createEndereco(value: EnderecoMobile): JAXBElement<EnderecoMobile> {
+//        return JAXBElement(
+//            _Endereco_QNAME,
+//            EnderecoMobile::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "buscaEventosLista"
+////    )
+//    fun createBuscaEventosLista(value: BuscaEventosLista): JAXBElement<BuscaEventosLista> {
+//        return JAXBElement(
+//            _BuscaEventosLista_QNAME,
+//            BuscaEventosLista::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "evento"
+////    )
+//    fun createEvento(value: Eventos): JAXBElement<Eventos> {
+//        return JAXBElement(
+//            _Evento_QNAME,
+//            Eventos::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "buscaEventosResponse"
+////    )
+//    fun createBuscaEventosResponse(value: BuscaEventosResponse): JAXBElement<BuscaEventosResponse> {
+//        return JAXBElement(
+//            _BuscaEventosResponse_QNAME,
+//            BuscaEventosResponse::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "rastro"
+////    )
+//    fun createRastro(value: EventosDosCorreios): JAXBElement<EventosDosCorreios> {
+//        return JAXBElement(
+//            _Rastro_QNAME,
+//            EventosDosCorreios::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "objeto"
+////    )
+//    fun createObjeto(value: Objeto): JAXBElement<Objeto> {
+//        return JAXBElement(
+//            _Objeto_QNAME,
+//            Objeto::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "buscaEventos"
+////    )
+////    fun createBuscaEventos(value: BuscaEventos): JAXBElement<BuscaEventos> {
+////        return JAXBElement(
+////            _BuscaEventos_QNAME,
+////            BuscaEventos::class.java,
+////            null,
+////            value
+////        )
+////    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "buscaEventosListaResponse"
+////    )
+//    fun createBuscaEventosListaResponse(value: BuscaEventosListaResponse): JAXBElement<BuscaEventosListaResponse> {
+//        return JAXBElement(
+//            _BuscaEventosListaResponse_QNAME,
+//            BuscaEventosListaResponse::class.java,
+//            null,
+//            value
+//        )
+//    }
+//
+////    @XmlElementDecl(
+////        namespace = "http://resource.webservice.correios.com.br/",
+////        name = "destino"
+////    )
+//    fun createDestino(value: Destinos): JAXBElement<Destinos> {
+//        return JAXBElement(
+//            _Destino_QNAME,
+//            Destinos::class.java,
+//            null,
+//            value
+//        )
+//    }
 
     companion object {
         private val _Endereco_QNAME =

@@ -9,17 +9,11 @@ import javax.xml.bind.annotation.XmlType
 class RegistroUnidades {
 
     var codigoDR: String? = null
-
     var codigoMCU: String? = null
-
     var codigoSRO: String? = null
-
     var nomeUnidade: String? = null
-
     var siglaDR: String? = null
-
     var siglaTipoUnidade: String? = null
-
     var tipoUnidade: String? = null
 
 }

@@ -7,10 +7,8 @@ import javax.xml.bind.annotation.XmlType
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(namespace = "listaEntregaExternaResponse", name = "ListaEntregaExternaResponse", propOrder = ["return"])
+@XmlType(namespace = "listaEntregaExternaResponse", name = "ListaEntregaExternaResponse", propOrder = ["retorno"])
 class ListaEntregaExternaResponse {
-
     @XmlElement(name = "return")
-    var `return`: ListaEntregaExterna2? = null
-
+    var retorno: ListaEntregaExterna2? = null
 }

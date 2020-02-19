@@ -30,9 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "buscaEventosListaResponse",
     namespace = "http://resource.webservice.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class BuscaEventosListaResponse {
     @XmlElement(name = "return")
-    var retorno: Sroxml? = null
+    var retorno: EventosDosCorreios? = null
 }

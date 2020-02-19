@@ -7,10 +7,10 @@ import javax.xml.bind.annotation.XmlType
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(namespace = "rastroJsonResponse", name = "RastroJsonResponse", propOrder = ["return"])
+@XmlType(namespace = "rastroJsonResponse", name = "RastroJsonResponse", propOrder = ["retorno"])
 class RastroJsonResponse {
 
     @XmlElement(name = "return")
-    var `return`: String? = null
+    var retorno: String? = null
 
 }
