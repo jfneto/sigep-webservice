@@ -37,6 +37,6 @@ import javax.xml.bind.annotation.XmlType
 class SQLException {
     var errorCode: Int? = null
     @XmlElement(name = "sQLState")
-    var sQLState: String? = null
+    var sqlState: String? = null
     var message: String? = null
 }
