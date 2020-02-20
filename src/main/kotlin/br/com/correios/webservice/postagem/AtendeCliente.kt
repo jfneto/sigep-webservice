@@ -1,6 +1,9 @@
 package br.com.correios.webservice.postagem
 
 import br.com.correios.webservice.enums.Acao
+import br.com.correios.webservice.enums.StatusCartao
+import br.com.correios.webservice.enums.StatusPlp
+import br.com.correios.webservice.enums.TipoBloqueio
 import br.com.correios.webservice.postagem.AutenticacaoException
 import br.com.correios.webservice.postagem.Exception_Exception
 import br.com.correios.webservice.postagem.SQLException_Exception
