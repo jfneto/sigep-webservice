@@ -46,7 +46,7 @@ import javax.xml.bind.annotation.XmlType
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(
-    name = "eventos",
+    name = "evento",
     namespace = "http://resource.webservice.correios.com.br/",
     propOrder = ["tipo", "status", "data", "hora", "descricao", "detalhe", "recebedor", "documento", "comentario", "local", "codigo", "cidade", "uf", "sto", "amazoncode", "amazontimezone", "destino", "endereco"]
 )

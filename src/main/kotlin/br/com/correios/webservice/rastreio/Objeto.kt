@@ -44,7 +44,6 @@ class Objeto {
     var nome: String? = null
     var categoria: String? = null
     var erro: String? = null
-
-    @XmlElement(namespace = "http://resource.webservice.correios.com.br/")
+    @XmlElement
     var evento: MutableList<Eventos>? = ArrayList()
 }
