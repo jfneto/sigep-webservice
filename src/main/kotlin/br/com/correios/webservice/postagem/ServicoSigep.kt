@@ -50,8 +50,8 @@ class ServicoSigep {
     var categoriaServico: CategoriaServico? = null
     var chancela: ChancelaMaster? = null
     var descricao: String? = null
-    var isExigeDimensoes: Boolean? = null
-    var isExigeValorCobrar: Boolean? = null
+    var exigeDimensoes: Boolean? = null // isExigeDimensoes
+    var exigeValorCobrar: Boolean? = null // isExigeValorCobrar
     var imitm: Long = 0
     var pagamentoEntrega: String? = null
     var remessaAgrupada: String? = null
