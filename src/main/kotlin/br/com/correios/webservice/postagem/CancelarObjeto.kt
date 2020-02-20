@@ -35,13 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["idPlp", "numeroEtiqueta", "usuario", "senha"]
 )
 class CancelarObjeto {
-
     var idPlp: Long? = null
-
     var numeroEtiqueta: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

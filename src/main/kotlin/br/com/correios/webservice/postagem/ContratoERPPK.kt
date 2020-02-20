@@ -33,9 +33,6 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["diretoria", "numero"]
 )
 class ContratoERPPK {
-
     var diretoria: Long = 0
-
     var numero: String? = null
-
 }

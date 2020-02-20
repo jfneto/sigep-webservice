@@ -33,9 +33,6 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["usuario", "senha"]
 )
 class BuscaServicosXServicosAdicionais {
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

@@ -33,9 +33,6 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["obj", "obs"]
 )
 class ColetaSimultanea : Coleta() {
-
     var obj: String? = null
-
     var obs: String? = null
-
 }

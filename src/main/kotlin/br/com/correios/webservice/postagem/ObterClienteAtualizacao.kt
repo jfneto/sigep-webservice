@@ -34,9 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["cnpjCliente", "usuario", "senha"]
 )
 class ObterClienteAtualizacao {
-
     var cnpjCliente: String? = null
     var usuario: String? = null
     var senha: String? = null
-
 }

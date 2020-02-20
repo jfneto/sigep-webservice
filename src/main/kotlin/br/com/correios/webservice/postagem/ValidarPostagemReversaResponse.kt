@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "validarPostagemReversaResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ValidarPostagemReversaResponse {
-
     @XmlElement(name = "return")
-    var isReturn: Boolean? = null
-
+    var retorno: Boolean? = null
 }

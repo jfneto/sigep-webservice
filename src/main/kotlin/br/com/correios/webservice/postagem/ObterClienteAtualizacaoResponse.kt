@@ -28,12 +28,10 @@ import javax.xml.datatype.XMLGregorianCalendar
 @XmlType(
     name = "obterClienteAtualizacaoResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ObterClienteAtualizacaoResponse {
-
     @XmlElement(name = "return")
     @XmlSchemaType(name = "dateTime")
-    var `return`: XMLGregorianCalendar? = null
-
+    var retorno: XMLGregorianCalendar? = null
 }

@@ -46,42 +46,29 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["cartaoPostagem", "conteudoProibido", "dataAtualizacaoCliente", "dataAtualizacaoSara", "dataFechamento", "dataPostagem", "dataPostagemSara", "objetosPostais", "plpCliente", "plpNu", "plpXml", "plpXmlRetorno", "status"]
 )
 class PreListaPostagem {
-
     var cartaoPostagem: CartaoPostagemERP? = null
-
     @XmlSchemaType(name = "string")
     var conteudoProibido: SimNao? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacaoCliente: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacaoSara: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataFechamento: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataPostagem: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataPostagemSara: XMLGregorianCalendar? = null
-
     @XmlElement(nillable = true)
     var objetosPostais: List<ObjetoPostal>? = ArrayList()
-
     var plpCliente: Long = 0
-
     var plpNu: Long = 0
-
     @XmlElement(nillable = true)
     @XmlSchemaType(name = "unsignedShort")
     var plpXml: List<Int>? = ArrayList()
-
     @XmlElement(nillable = true)
     @XmlSchemaType(name = "unsignedShort")
     var plpXmlRetorno: List<Int>? = ArrayList()
-
     @XmlSchemaType(name = "string")
     var status: StatusPlp? = null
 }

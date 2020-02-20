@@ -38,17 +38,11 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["dataFinal", "dataInicial", "datajFim", "datajIni", "id"]
 )
 class VigenciaERP {
-
     @XmlSchemaType(name = "dateTime")
     var dataFinal: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataInicial: XMLGregorianCalendar? = null
-
     var datajFim: Int? = null
-
     var datajIni: Int? = null
-
     var id: Long? = null
-
 }

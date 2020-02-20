@@ -35,11 +35,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["etiquetas", "usuario", "senha"]
 )
 class GeraDigitoVerificadorEtiquetas {
-
     var etiquetas: List<String>? = ArrayList()
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

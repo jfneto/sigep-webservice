@@ -32,7 +32,5 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigo"]
 )
 class PesquisarEmbalagensPorServico {
-
     var codigo: String? = null
-
 }

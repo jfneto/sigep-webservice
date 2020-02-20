@@ -37,17 +37,10 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["diretoriaRegional", "endereco", "id", "nome", "status", "tipo"]
 )
 class UnidadePostagemERP {
-
     var diretoriaRegional: String? = null
-
     var endereco: EnderecoERP? = null
-
     var id: String? = null
-
     var nome: String? = null
-
     var status: String? = null
-
     var tipo: String? = null
-
 }

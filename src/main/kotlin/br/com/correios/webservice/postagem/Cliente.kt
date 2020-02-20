@@ -9,5 +9,4 @@ import javax.xml.bind.annotation.XmlType
 class Cliente {
     var numeroContrato: String? = null
     var possuiContrato: String? = null
-
 }

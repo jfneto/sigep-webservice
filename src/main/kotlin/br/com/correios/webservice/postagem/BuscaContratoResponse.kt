@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "buscaContratoResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class BuscaContratoResponse {
-
     @XmlElement(name = "return")
-    var `return`: ContratoERP? = null
-
+    var retorno: ContratoERP? = null
 }

@@ -34,11 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigo", "nome", "tipo"]
 )
 class EmbalagemLRSMaster {
-
     var codigo: String? = null
-
     var nome: String? = null
-
     var tipo: String? = null
-
 }

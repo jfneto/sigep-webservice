@@ -36,11 +36,9 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigoServico", "cepOrigem", "cepDestino", "usuario", "senha"]
 )
 class VerificaModalTransporte {
-
     var codigoServico: String? = null
     var cepOrigem: String? = null
     var cepDestino: String? = null
     var usuario: String? = null
     var senha: String? = null
-
 }

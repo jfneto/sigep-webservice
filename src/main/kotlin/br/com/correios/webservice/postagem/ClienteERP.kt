@@ -42,30 +42,18 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["cnpj", "contratos", "dataAtualizacao", "datajAtualizacao", "descricaoStatusCliente", "gerenteConta", "horajAtualizacao", "id", "inscricaoEstadual", "nome", "statusCodigo"]
 )
 class ClienteERP {
-
     var cnpj: String? = null
-
     @XmlElement(nillable = true)
     var contratos: List<ContratoERP>? = ArrayList()
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacao: XMLGregorianCalendar? = null
-
     var datajAtualizacao: Int? = null
-
     var descricaoStatusCliente: String? = null
-
     @XmlElement(nillable = true)
     var gerenteConta: List<GerenteConta>? = ArrayList()
-
     var horajAtualizacao: Long? = null
-
     var id: Long = 0
-
     var inscricaoEstadual: String? = null
-
     var nome: String? = null
-
     var statusCodigo: String? = null
-
 }

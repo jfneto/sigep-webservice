@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "fechaPlpResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class FechaPlpResponse {
-
     @XmlElement(name = "return")
-    var `return`: Long? = null
-
+    var retorno: Long? = null
 }

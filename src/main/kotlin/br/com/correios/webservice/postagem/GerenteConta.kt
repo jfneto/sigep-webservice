@@ -46,31 +46,20 @@ import javax.xml.datatype.XMLGregorianCalendar
 class GerenteConta {
     @XmlElement(nillable = true)
     var clientesVisiveis: List<ClienteERP>? = ArrayList()
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacao: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataInclusao: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataSenha: XMLGregorianCalendar? = null
-
     var login: String? = null
-
     var matricula: String? = null
-
     var senha: String? = null
-
     @XmlSchemaType(name = "string")
     var status: StatusGerente? = null
-
     @XmlSchemaType(name = "string")
     var tipoGerente: TipoGerente? = null
-
     @XmlElement(nillable = true)
     var usuariosInstalacao: List<UsuarioInstalacao>? = ArrayList()
-
     var validade: String? = null
-
 }

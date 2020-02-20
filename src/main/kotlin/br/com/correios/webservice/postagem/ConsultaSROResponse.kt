@@ -7,10 +7,8 @@ import javax.xml.bind.annotation.XmlType
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "consultaSROResponse", propOrder = ["return"])
+@XmlType(name = "consultaSROResponse", propOrder = ["retorno"])
 class ConsultaSROResponse {
-
     @XmlElement(name = "return")
-    var `return`: String? = null
-
+    var retorno: String? = null
 }

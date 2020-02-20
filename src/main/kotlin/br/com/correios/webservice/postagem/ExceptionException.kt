@@ -9,7 +9,7 @@ import javax.xml.ws.WebFault
  *
  */
 @WebFault(name = "Exception", targetNamespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/")
-class Exception_Exception : java.lang.Exception {
+class ExceptionException : java.lang.Exception {
 
     var faultInfo: Exception
         private set

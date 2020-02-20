@@ -35,12 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["errorCode", "sqlState", "message"]
 )
 class SQLException {
-
     var errorCode: Int? = null
-
     @XmlElement(name = "sQLState")
     var sQLState: String? = null
-
     var message: String? = null
-
 }

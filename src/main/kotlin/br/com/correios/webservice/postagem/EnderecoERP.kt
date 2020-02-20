@@ -40,20 +40,12 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["bairro", "cep", "cidade", "complemento2", "end", "uf", "unidadesPostagem"]
 )
 class EnderecoERP {
-
     var bairro: String? = null
-
     var cep: String? = null
-
     var cidade: String? = null
-
     var complemento2: String? = null
-
     var end: String? = null
-
     var uf: String? = null
-
     @XmlElement(nillable = true)
     var unidadesPostagem: List<UnidadePostagemERP>? = ArrayList()
-
 }

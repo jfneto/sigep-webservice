@@ -35,13 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["categoria", "codigo", "sigla", "tipo"]
 )
 class ServicoAdicionalTO {
-
     var categoria: String? = null
-
     var codigo: String? = null
-
     var sigla: String? = null
-
     var tipo: String? = null
-
 }

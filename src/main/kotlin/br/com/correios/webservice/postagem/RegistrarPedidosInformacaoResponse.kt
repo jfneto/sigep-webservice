@@ -7,16 +7,8 @@ import javax.xml.bind.annotation.XmlElement
 import javax.xml.bind.annotation.XmlType
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "registrarPedidosInformacaoResponse", propOrder = ["return"])
+@XmlType(name = "registrarPedidosInformacaoResponse", propOrder = ["retorno"])
 class RegistrarPedidosInformacaoResponse {
     @XmlElement(name = "return")
-    protected var _return: List<Retorno>? = null
-
-    val `return`: List<Retorno>?
-        get() {
-            if (_return == null) {
-                _return = ArrayList()
-            }
-            return _return
-        }
+    var retorno: List<Retorno>? = ArrayList()
 }

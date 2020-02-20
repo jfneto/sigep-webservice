@@ -37,17 +37,10 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["xml", "idPlpCliente", "cartaoPostagem", "faixaEtiquetas", "usuario", "senha"]
 )
 class FechaPlp {
-
     var xml: String? = null
-
     var idPlpCliente: Long? = null
-
     var cartaoPostagem: String? = null
-
     var faixaEtiquetas: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

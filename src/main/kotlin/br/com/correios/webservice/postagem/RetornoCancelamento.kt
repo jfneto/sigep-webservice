@@ -38,10 +38,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codErro", "codigoAdministrativo", "data", "hora", "msgErro", "objetoPostal"]
 )
 class RetornoCancelamento {
-
     @XmlElement(name = "cod_erro")
     var codErro: String? = null
-
     @XmlElement(name = "codigo_administrativo")
     var codigoAdministrativo: String? = null
     var data: String? = null
@@ -50,5 +48,4 @@ class RetornoCancelamento {
     var msgErro: String? = null
     @XmlElement(name = "objeto_postal")
     var objetoPostal: ObjetoSimplificado? = null
-
 }

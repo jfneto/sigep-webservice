@@ -28,10 +28,10 @@ import javax.xml.bind.annotation.*
 @XmlType(
     name = "getStatusCartaoPostagemResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class GetStatusCartaoPostagemResponse {
     @XmlElement(name = "return")
     @XmlSchemaType(name = "string")
-    var _return: StatusCartao? = null
+    var retorno: StatusCartao? = null
 }

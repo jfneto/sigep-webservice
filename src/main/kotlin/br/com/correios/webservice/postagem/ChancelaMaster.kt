@@ -38,20 +38,13 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["ativo", "chancela", "dataAtualizacao", "descricao", "id", "servicosSigep"]
 )
 class ChancelaMaster {
-
     @XmlSchemaType(name = "string")
     var ativo: SimNao? = null
-
     lateinit var chancela: ByteArray
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacao: XMLGregorianCalendar? = null
-
     var descricao: String? = null
-
     var id: Long? = null
-
     @XmlElement(nillable = true)
     var servicosSigep: List<ServicoSigep>? = ArrayList()
-
 }

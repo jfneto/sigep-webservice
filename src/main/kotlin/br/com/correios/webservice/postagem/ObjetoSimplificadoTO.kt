@@ -8,14 +8,10 @@ import javax.xml.bind.annotation.XmlType
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "objetoSimplificadoTO", propOrder = ["datahoraCancelamento", "numeroPedido", "statusPedido"])
 class ObjetoSimplificadoTO {
-
     @XmlElement(name = "datahora_cancelamento")
     var datahoraCancelamento: String? = null
-
     @XmlElement(name = "numero_pedido")
     var numeroPedido: Int? = null
-
     @XmlElement(name = "status_pedido")
     var statusPedido: String? = null
-
 }

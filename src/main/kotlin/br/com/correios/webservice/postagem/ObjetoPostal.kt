@@ -46,33 +46,21 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["codigoEtiqueta", "dataAtualizacaoCliente", "dataBloqueioObjeto", "dataCancelamentoEtiqueta", "dataInclusao", "objetoPostalPK", "plpNu", "preListaPostagem", "restricaoAerea", "statusBloqueio", "statusEtiqueta"]
 )
 class ObjetoPostal {
-
     var codigoEtiqueta: String? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacaoCliente: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataBloqueioObjeto: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataCancelamentoEtiqueta: XMLGregorianCalendar? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataInclusao: XMLGregorianCalendar? = null
-
     var objetoPostalPK: ObjetoPostalPK? = null
-
     var plpNu: Long? = null
-
     var preListaPostagem: PreListaPostagem? = null
-
     @XmlSchemaType(name = "string")
     var restricaoAerea: SimNao? = null
-
     var statusBloqueio: String? = null
-
     @XmlSchemaType(name = "string")
     var statusEtiqueta: StatusObjetoPostal? = null
-
 }

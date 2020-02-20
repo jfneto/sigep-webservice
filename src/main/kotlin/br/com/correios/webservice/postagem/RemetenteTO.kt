@@ -7,7 +7,5 @@ import javax.xml.bind.annotation.XmlType
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "remetenteTO", propOrder = ["identificacao"])
 class RemetenteTO : PessoaTO() {
-
     var identificacao: String? = null
-
 }

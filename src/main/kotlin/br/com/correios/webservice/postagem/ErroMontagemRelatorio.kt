@@ -32,7 +32,5 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["message"]
 )
 class ErroMontagemRelatorio {
-
     var message: String? = null
-
 }

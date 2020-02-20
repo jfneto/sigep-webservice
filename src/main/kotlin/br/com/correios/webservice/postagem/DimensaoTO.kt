@@ -37,17 +37,10 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["altura", "comprimento", "diametro", "largura", "peso", "soma"]
 )
 class DimensaoTO {
-
     var altura: MedidaTO? = null
-
     var comprimento: MedidaTO? = null
-
     var diametro: MedidaTO? = null
-
     var largura: MedidaTO? = null
-
     var peso: MedidaTO? = null
-
     var soma: MedidaTO? = null
-
 }

@@ -41,25 +41,16 @@ import javax.xml.bind.annotation.*
     ColetaSimultanea::class, ColetaReversa::class
 )
 open class Coleta {
-
     var cklist: String? = null
-
     var descricao: String? = null
-
     @XmlElement(nillable = true)
     var documento: List<String>? = ArrayList()
-
     @XmlElement(name = "id_cliente")
     var idCliente: String? = null
-
     @XmlElement(nillable = true)
     var produto: List<Produto>? = ArrayList()
-
     var remetente: Remetente? = null
-
     var tipo: String? = null
-
     @XmlElement(name = "valor_declarado")
     var valorDeclarado: String? = null
-
 }

@@ -38,19 +38,11 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codAdministrativo", "codigoServico", "idCartaoPostagem", "cepDestinatario", "coleta", "usuario", "senha"]
 )
 class ValidarPostagemSimultanea {
-
     var codAdministrativo: Int? = null
-
     var codigoServico: Int? = null
-
     var idCartaoPostagem: String? = null
-
     var cepDestinatario: String? = null
-
     var coleta: ColetaSimultanea? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

@@ -34,9 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["numeroCartaoPostagem", "usuario", "senha"]
 )
 class GetStatusCartaoPostagem {
-
     var numeroCartaoPostagem: String? = null
     var usuario: String? = null
     var senha: String? = null
-
 }

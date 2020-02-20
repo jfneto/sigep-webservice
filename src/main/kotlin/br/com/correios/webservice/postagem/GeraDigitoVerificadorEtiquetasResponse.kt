@@ -31,10 +31,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "geraDigitoVerificadorEtiquetasResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class GeraDigitoVerificadorEtiquetasResponse {
     @XmlElement(name = "return", type = Int::class)
-    var _return: List<Int>? = ArrayList()
-
+    var retorno: List<Int>? = ArrayList()
 }

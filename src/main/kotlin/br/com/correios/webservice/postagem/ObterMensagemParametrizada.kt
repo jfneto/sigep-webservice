@@ -32,7 +32,5 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["id"]
 )
 class ObterMensagemParametrizada {
-
     var id: Short? = null
-
 }

@@ -35,13 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["numeroEtiqueta", "idPlp", "usuario", "senha"]
 )
 class ValidaEtiquetaPLP {
-
     var numeroEtiqueta: String? = null
-
     var idPlp: Long? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

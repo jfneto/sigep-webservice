@@ -45,7 +45,6 @@ import javax.xml.bind.annotation.XmlType
 )
 @XmlSeeAlso(Remetente::class)
 open class Pessoa {
-
     var bairro: String? = null
     var cep: String? = null
     var cidade: String? = null
@@ -58,5 +57,4 @@ open class Pessoa {
     var referencia: String? = null
     var telefone: String? = null
     var uf: String? = null
-
 }

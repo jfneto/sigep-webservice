@@ -37,17 +37,10 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["tipoDestinatario", "identificador", "idServico", "qtdEtiquetas", "usuario", "senha"]
 )
 class SolicitaEtiquetas {
-
     var tipoDestinatario: String? = null
-
     var identificador: String? = null
-
     var idServico: Long? = null
-
     var qtdEtiquetas: Int? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

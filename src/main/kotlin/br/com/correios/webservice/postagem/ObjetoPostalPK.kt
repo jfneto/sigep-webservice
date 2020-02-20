@@ -33,8 +33,6 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigoEtiqueta", "plpNu"]
 )
 class ObjetoPostalPK {
-
     var codigoEtiqueta: String? = null
     var plpNu: Long = 0
-
 }

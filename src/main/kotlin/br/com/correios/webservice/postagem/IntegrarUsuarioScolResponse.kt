@@ -30,11 +30,11 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "integrarUsuarioScolResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class IntegrarUsuarioScolResponse {
 
     @XmlElement(name = "return")
-    var isReturn: Boolean? = null
+    var retorno: Boolean? = null
 
 }

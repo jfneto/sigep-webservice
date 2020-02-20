@@ -35,13 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codAdministrativo", "xml", "usuario", "senha"]
 )
 class SolicitarPostagemScol {
-
     var codAdministrativo: Int? = null
-
     var xml: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

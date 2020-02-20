@@ -61,62 +61,33 @@ import javax.xml.datatype.XMLGregorianCalendar
     propOrder = ["cidNoCidade", "ctcCoAadministrativo", "ctcNuContrato", "ctcNuContratoEct", "cvpEdBairro", "cvpEdCliente", "cvpEdComplemento", "cvpEdNumero", "cvpNoCliente", "cvpNuCep", "descricaoErro", "estSgEstado", "monVarTarifaAdicional", "monVarTarifaServico", "monVarValorDescontos", "monVarValorImposto", "prsCoProdutoServico", "pveNu", "pveOrgNuAgencia", "pveOrgNuAgenciaDes", "pveOrgNuAgenciaOri", "retornaCodErro", "sitNoSituacao", "tlgTxDescricao", "vapDhTransacao", "vapNuEtiquetaEncomenda", "vapVrCobradoEct", "vapVrNominal"]
 )
 class ValePostal {
-
     var cidNoCidade: String? = null
-
     var ctcCoAadministrativo: String? = null
-
     var ctcNuContrato: Long? = null
-
     var ctcNuContratoEct: Long? = null
-
     var cvpEdBairro: String? = null
-
     var cvpEdCliente: String? = null
-
     var cvpEdComplemento: String? = null
-
     var cvpEdNumero: String? = null
-
     var cvpNoCliente: String? = null
-
     var cvpNuCep: Long? = null
-
     var descricaoErro: String? = null
-
     var estSgEstado: String? = null
-
     var monVarTarifaAdicional = 0
-
     var monVarTarifaServico = 0
-
     var monVarValorDescontos = 0
-
     var monVarValorImposto = 0
-
     var prsCoProdutoServico: Long? = null
-
     var pveNu: Long? = null
-
     var pveOrgNuAgencia: Long? = null
-
     var pveOrgNuAgenciaDes: Long? = null
-
     var pveOrgNuAgenciaOri: Long? = null
-
     var retornaCodErro = 0
-
     var sitNoSituacao: String? = null
-
     var tlgTxDescricao: String? = null
-
     @XmlSchemaType(name = "dateTime")
     var vapDhTransacao: XMLGregorianCalendar? = null
-
     var vapNuEtiquetaEncomenda: String? = null
-
     var vapVrCobradoEct: Double? = null
-
     var vapVrNominal: Double? = null
-
 }

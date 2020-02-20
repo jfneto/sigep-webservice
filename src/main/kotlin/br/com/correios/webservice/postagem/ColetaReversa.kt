@@ -39,19 +39,12 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["ag", "ar", "cartao", "numero", "objCol", "servicoAdicional"]
 )
 class ColetaReversa : Coleta() {
-
     var ag: String? = null
-
     var ar: Int? = null
-
     var cartao: String? = null
-
     var numero: Int? = null
-
     @XmlElement(name = "obj_col", nillable = true)
     var objCol: List<Objeto>? = ArrayList()
-
     @XmlElement(name = "servico_adicional")
     var servicoAdicional: String? = null
-
 }

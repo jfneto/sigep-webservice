@@ -34,9 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigo", "qtd", "tipo"]
 )
 class Produto {
-
     var codigo: String? = null
     var qtd: String? = null
     var tipo: String? = null
-
 }

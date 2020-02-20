@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "validaPlpResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ValidaPlpResponse {
-
     @XmlElement(name = "return")
-    var isReturn = false
-
+    var retorno = false
 }

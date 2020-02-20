@@ -4,7 +4,7 @@ import javax.xml.ws.WebFault
 
 
 @WebFault(name = "SQLException", targetNamespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/")
-class SQLException_Exception : java.lang.Exception {
+class SQLExceptionException : java.lang.Exception {
 
     var faultInfo: SQLException
         private set

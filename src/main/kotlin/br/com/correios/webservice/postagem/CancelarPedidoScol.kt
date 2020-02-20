@@ -36,15 +36,9 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codAdministrativo", "idPostagem", "tipo", "usuario", "senha"]
 )
 class CancelarPedidoScol {
-
     var codAdministrativo: String? = null
-
     var idPostagem: String? = null
-
     var tipo: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

@@ -32,7 +32,5 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codigo"]
 )
 class PesquisarServicosAdicionais {
-
     var codigo: String? = null
-
 }

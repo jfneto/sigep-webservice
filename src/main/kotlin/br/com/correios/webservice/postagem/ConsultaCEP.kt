@@ -28,7 +28,5 @@ import javax.xml.bind.annotation.XmlType
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "consultaCEP", namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/", propOrder = ["cep"])
 class ConsultaCEP {
-
     var cep: String? = null
-
 }

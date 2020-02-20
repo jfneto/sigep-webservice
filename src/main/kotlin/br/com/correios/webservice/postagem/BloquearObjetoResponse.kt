@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "bloquearObjetoResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class BloquearObjetoResponse {
-
     @XmlElement(name = "return")
-    var `return`: String? = null
-
+    var retorno: String? = null
 }

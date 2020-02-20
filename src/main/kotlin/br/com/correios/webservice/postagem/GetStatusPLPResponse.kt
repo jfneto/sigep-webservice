@@ -28,11 +28,10 @@ import javax.xml.bind.annotation.*
 @XmlType(
     name = "getStatusPLPResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class GetStatusPLPResponse {
     @XmlElement(name = "return")
     @XmlSchemaType(name = "string")
-    var _return: StatusPlp? = null
-
+    var retorno: StatusPlp? = null
 }

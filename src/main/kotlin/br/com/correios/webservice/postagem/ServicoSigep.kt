@@ -48,28 +48,16 @@ import javax.xml.bind.annotation.XmlType
 class ServicoSigep {
     @XmlSchemaType(name = "string")
     var categoriaServico: CategoriaServico? = null
-
     var chancela: ChancelaMaster? = null
-
     var descricao: String? = null
-
     var isExigeDimensoes: Boolean? = null
-
     var isExigeValorCobrar: Boolean? = null
-
     var imitm: Long = 0
-
     var pagamentoEntrega: String? = null
-
     var remessaAgrupada: String? = null
-
     @XmlSchemaType(name = "string")
     var restricao: SimNao? = null
-
     var servico: Long = 0
-
     var servicoERP: ServicoERP? = null
-
     var ssiCoCodigoPostal: String? = null
-
 }

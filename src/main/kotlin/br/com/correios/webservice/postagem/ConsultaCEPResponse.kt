@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "consultaCEPResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ConsultaCEPResponse {
-
     @XmlElement(name = "return")
-    var `return`: EnderecoERP? = null
-
+    var retorno: EnderecoERP? = null
 }

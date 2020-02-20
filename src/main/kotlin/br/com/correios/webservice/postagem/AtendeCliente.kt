@@ -4,10 +4,6 @@ import br.com.correios.webservice.enums.Acao
 import br.com.correios.webservice.enums.StatusCartao
 import br.com.correios.webservice.enums.StatusPlp
 import br.com.correios.webservice.enums.TipoBloqueio
-import br.com.correios.webservice.postagem.AutenticacaoException
-import br.com.correios.webservice.postagem.Exception_Exception
-import br.com.correios.webservice.postagem.SQLException_Exception
-import br.com.correios.webservice.postagem.SigepClienteException
 import javax.jws.*
 import javax.xml.bind.annotation.XmlSeeAlso
 import javax.xml.datatype.XMLGregorianCalendar
@@ -228,7 +224,7 @@ interface AtendeCliente {
         targetNamespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
         className = "br.com.correios.webservice.postagem.CancelarObjetoResponse"
     )
-    @Throws(AutenticacaoException::class, Exception_Exception::class, SigepClienteException::class)
+    @Throws(AutenticacaoException::class, ExceptionException::class, SigepClienteException::class)
     @HandlerChain(file = "handlers.xml")
     fun cancelarObjeto(
         @WebParam(name = "idPlp", targetNamespace = "") idPlp: Long?,
@@ -568,7 +564,7 @@ interface AtendeCliente {
         targetNamespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
         className = "br.com.correios.webservice.postagem.ConsultaCEPResponse"
     )
-    @Throws(SQLException_Exception::class, SigepClienteException::class)
+    @Throws(SQLExceptionException::class, SigepClienteException::class)
     @HandlerChain(file = "handlers.xml")
     fun consultaCEP(
         @WebParam(name = "cep", targetNamespace = "") cep: String?

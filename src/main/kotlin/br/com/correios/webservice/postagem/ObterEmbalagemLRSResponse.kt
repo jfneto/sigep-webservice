@@ -31,9 +31,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "obterEmbalagemLRSResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ObterEmbalagemLRSResponse {
     @XmlElement(name = "return")
-    var _return: List<EmbalagemLRSMaster>? = ArrayList()
+    var retorno: List<EmbalagemLRSMaster>? = ArrayList()
 }

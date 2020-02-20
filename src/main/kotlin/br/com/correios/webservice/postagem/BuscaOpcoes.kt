@@ -37,11 +37,7 @@ import javax.xml.bind.annotation.XmlType
 )
 class BuscaOpcoes {
     var listaObjetos: List<String>? = ArrayList()
-
     var tipoResultado: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

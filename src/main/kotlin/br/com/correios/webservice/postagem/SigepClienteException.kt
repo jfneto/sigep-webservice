@@ -10,7 +10,6 @@ import javax.xml.ws.WebFault
  */
 @WebFault(name = "SigepClienteException", targetNamespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/")
 class SigepClienteException : java.lang.Exception {
-
     var faultInfo: String
         private set
 

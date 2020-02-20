@@ -33,7 +33,5 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["arg0"]
 )
 class VerificaSeTodosObjetosCancelados {
-
     var arg0: List<ObjetoPostal>? = ArrayList()
-
 }

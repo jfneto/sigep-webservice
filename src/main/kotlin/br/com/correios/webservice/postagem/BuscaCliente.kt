@@ -35,13 +35,8 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["idContrato", "idCartaoPostagem", "usuario", "senha"]
 )
 class BuscaCliente {
-
     var idContrato: String? = null
-
     var idCartaoPostagem: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

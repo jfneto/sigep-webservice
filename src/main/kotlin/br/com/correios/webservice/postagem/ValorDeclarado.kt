@@ -33,8 +33,6 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["maximo", "minimo"]
 )
 class ValorDeclarado {
-
     var maximo: Double? = null
     var minimo: Double? = null
-
 }

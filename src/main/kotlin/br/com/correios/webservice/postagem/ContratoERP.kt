@@ -52,44 +52,25 @@ import javax.xml.datatype.XMLGregorianCalendar
 class ContratoERP {
     @XmlElement(nillable = true)
     var cartoesPostagem: List<CartaoPostagemERP>? = ArrayList()
-
     var cliente: ClienteERP? = null
-
     var codigoCliente: Long = 0
-
     var codigoDiretoria: String? = null
-
     var contratoPK: ContratoERPPK? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataAtualizacao: XMLGregorianCalendar? = null
-
     var dataAtualizacaoDDMMYYYY: String? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataVigenciaFim: XMLGregorianCalendar? = null
-
     var dataVigenciaFimDDMMYYYY: String? = null
-
     @XmlSchemaType(name = "dateTime")
     var dataVigenciaInicio: XMLGregorianCalendar? = null
-
     var dataVigenciaInicioDDMMYYYY: String? = null
-
     var datajAtualizacao: Int? = null
-
     var datajVigenciaFim: Int? = null
-
     var datajVigenciaInicio: Int? = null
-
     var descricaoDiretoriaRegional: String? = null
-
     var descricaoStatus: String? = null
-
     var diretoriaRegional: UnidadePostagemERP? = null
-
     var horajAtualizacao: Int? = null
-
     var statusCodigo: String? = null
-
 }

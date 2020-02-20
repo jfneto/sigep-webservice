@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "obterMensagemParametrizadaResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class ObterMensagemParametrizadaResponse {
-
     @XmlElement(name = "return")
-    var `return`: MensagemParametrizadaTO? = null
-
+    var retorno: MensagemParametrizadaTO? = null
 }

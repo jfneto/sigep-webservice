@@ -34,11 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["idPlpMaster", "usuario", "senha"]
 )
 class SolicitaXmlPlp {
-
     var idPlpMaster: Long? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

@@ -41,23 +41,13 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["cliente", "numero", "diretoria", "cartao", "unidadePostagem", "servico", "servicosAdicionais", "usuario", "senha"]
 )
 class ValidaPlp {
-
     var cliente: Long = 0
-
     var numero: String? = null
-
     var diretoria: Long = 0
-
     var cartao: String? = null
-
     var unidadePostagem: String? = null
-
     var servico: Long? = null
-
     var servicosAdicionais: List<String>? = ArrayList()
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

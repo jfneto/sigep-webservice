@@ -8,14 +8,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "consultaSRO", propOrder = ["listaObjetos", "tipoConsulta", "tipoResultado", "usuarioSro", "senhaSro"])
 class ConsultaSRO {
-    protected var listaObjetos: List<String>? = ArrayList()
-
+    var listaObjetos: List<String>? = ArrayList()
     var tipoConsulta: String? = null
-
     var tipoResultado: String? = null
-
     var usuarioSro: String? = null
-
     var senhaSro: String? = null
-
 }

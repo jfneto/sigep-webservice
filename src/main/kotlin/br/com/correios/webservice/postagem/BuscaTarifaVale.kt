@@ -44,31 +44,17 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["codAdministrativo", "usuario", "senha", "codServico", "cepOrigem", "cepDestino", "peso", "codFormato", "comprimento", "altura", "largura", "valorDeclarado", "servicoAdicional"]
 )
 class BuscaTarifaVale {
-
     var codAdministrativo: String? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
     var codServico: String? = null
-
     var cepOrigem: String? = null
-
     var cepDestino: String? = null
-
     var peso: String? = null
-
     var codFormato: Int? = null
-
     var comprimento: Double? = null
-
     var altura: Double? = null
-
     var largura: Double? = null
-
     var valorDeclarado: Double? = null
-
     var servicoAdicional: String? = null
-
 }

@@ -40,19 +40,12 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["numeroEtiqueta", "idPlp", "tipoBloqueio", "acao", "usuario", "senha"]
 )
 class BloquearObjeto {
-
     var numeroEtiqueta: String? = null
-
     var idPlp: Long? = null
-
     @XmlSchemaType(name = "string")
     var tipoBloqueio: TipoBloqueio? = null
-
     @XmlSchemaType(name = "string")
     var acao: Acao? = null
-
     var usuario: String? = null
-
     var senha: String? = null
-
 }

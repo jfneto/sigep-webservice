@@ -35,14 +35,10 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["datahoraCancelamento", "numeroPedido", "statusPedido"]
 )
 class ObjetoSimplificado {
-
     @XmlElement(name = "datahora_cancelamento")
     var datahoraCancelamento: String? = null
-
     @XmlElement(name = "numero_pedido")
     var numeroPedido: Int? = null
-
     @XmlElement(name = "status_pedido")
     var statusPedido: String? = null
-
 }

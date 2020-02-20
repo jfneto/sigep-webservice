@@ -30,11 +30,9 @@ import javax.xml.bind.annotation.XmlType
 @XmlType(
     name = "pesquisarDimensoesServicoResponse",
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
-    propOrder = ["_return"]
+    propOrder = ["retorno"]
 )
 class PesquisarDimensoesServicoResponse {
-
     @XmlElement(name = "return")
-    var `return`: DimensaoTO? = null
-
+    var retorno: DimensaoTO? = null
 }

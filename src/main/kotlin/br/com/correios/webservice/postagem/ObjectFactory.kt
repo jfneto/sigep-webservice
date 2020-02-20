@@ -23,10 +23,7 @@ import javax.xml.namespace.QName
  */
 @XmlRegistry
 class ObjectFactory{
-    /**
-     * Create an instance of [AtualizaPagamentoNaEntregaResponse]
-     *
-     */
+
     fun createAtualizaPagamentoNaEntregaResponse(): AtualizaPagamentoNaEntregaResponse {
         return AtualizaPagamentoNaEntregaResponse()
     }

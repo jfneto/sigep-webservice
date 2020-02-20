@@ -34,9 +34,7 @@ import javax.xml.bind.annotation.XmlType
     propOrder = ["prmCoParametro", "prmTxParametro", "prmTxValor"]
 )
 class ParametroMaster {
-
     var prmCoParametro: Long = 0
     var prmTxParametro: String? = null
     var prmTxValor: String? = null
-
 }
