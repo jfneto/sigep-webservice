@@ -46,5 +46,5 @@ class Objeto {
     var erro: String? = null
 
     @XmlElement(namespace = "http://resource.webservice.correios.com.br/")
-    var evento: List<Eventos>? = ArrayList()
+    var evento: MutableList<Eventos>? = ArrayList()
 }

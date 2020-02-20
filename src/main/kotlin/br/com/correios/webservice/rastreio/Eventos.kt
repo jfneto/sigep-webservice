@@ -69,10 +69,8 @@ class Eventos {
     var amazontimezone: String? = null
 
     @XmlElement(namespace = "http://resource.webservice.correios.com.br/")
-    var destino: List<Destinos>? = ArrayList()
+    var destino: MutableList<Destinos>? = ArrayList()
 
     @XmlElement(namespace = "http://resource.webservice.correios.com.br/")
     var endereco: EnderecoMobile? = null
-
-
 }
