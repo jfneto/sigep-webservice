@@ -1,10 +1,7 @@
 package br.com.correios.webservice.estimativa
 
 import java.math.BigDecimal
-import javax.jws.WebMethod
-import javax.jws.WebParam
-import javax.jws.WebResult
-import javax.jws.WebService
+import javax.jws.*
 import javax.xml.bind.annotation.XmlSeeAlso
 import javax.xml.ws.RequestWrapper
 import javax.xml.ws.ResponseWrapper
@@ -31,6 +28,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoPrazoResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrecoPrazo(
         @WebParam(name = "nCdEmpresa", targetNamespace = "http://tempuri.org/") nCdEmpresa: String?,
         @WebParam(name = "sDsSenha", targetNamespace = "http://tempuri.org/") sDsSenha: String?,
@@ -60,6 +58,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoPrazoDataResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrecoPrazoData(
         @WebParam(name = "nCdEmpresa", targetNamespace = "http://tempuri.org/") nCdEmpresa: String?,
         @WebParam(name = "sDsSenha", targetNamespace = "http://tempuri.org/") sDsSenha: String?,
@@ -90,6 +89,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoPrazoRestricaoResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrecoPrazoRestricao(
         @WebParam(name = "nCdEmpresa", targetNamespace = "http://tempuri.org/") nCdEmpresa: String?,
         @WebParam(name = "sDsSenha", targetNamespace = "http://tempuri.org/") sDsSenha: String?,
@@ -120,6 +120,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPreco(
         @WebParam(name = "nCdEmpresa", targetNamespace = "http://tempuri.org/") nCdEmpresa: String?,
         @WebParam(name = "sDsSenha", targetNamespace = "http://tempuri.org/") sDsSenha: String?,
@@ -149,6 +150,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoDataResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrecoData(
         @WebParam(name = "nCdEmpresa", targetNamespace = "http://tempuri.org/") nCdEmpresa: String?,
         @WebParam(name = "sDsSenha", targetNamespace = "http://tempuri.org/") sDsSenha: String?,
@@ -179,6 +181,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrazoResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrazo(
         @WebParam(name = "nCdServico", targetNamespace = "http://tempuri.org/") nCdServico: String?,
         @WebParam(name = "sCepOrigem", targetNamespace = "http://tempuri.org/") sCepOrigem: String?,
@@ -197,6 +200,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrazoDataResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrazoData(
         @WebParam(name = "nCdServico", targetNamespace = "http://tempuri.org/") nCdServico: String?,
         @WebParam(name = "sCepOrigem", targetNamespace = "http://tempuri.org/") sCepOrigem: String?,
@@ -216,6 +220,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrazoRestricaoResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrazoRestricao(
         @WebParam(name = "nCdServico", targetNamespace = "http://tempuri.org/") nCdServico: String?,
         @WebParam(name = "sCepOrigem", targetNamespace = "http://tempuri.org/") sCepOrigem: String?,
@@ -235,6 +240,7 @@ interface CalcPrecoPrazoWSSoap {
         targetNamespace = "http://tempuri.org/",
         className = "br.com.correios.webservice.estimativa.CalcPrecoFACResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun calcPrecoFAC(
         @WebParam(name = "nCdServico", targetNamespace = "http://tempuri.org/") nCdServico: String?,
         @WebParam(name = "nVlPeso", targetNamespace = "http://tempuri.org/") nVlPeso: String?,

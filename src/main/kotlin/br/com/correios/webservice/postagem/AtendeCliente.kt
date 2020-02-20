@@ -8,10 +8,7 @@ import br.com.correios.webservice.postagem.AutenticacaoException
 import br.com.correios.webservice.postagem.Exception_Exception
 import br.com.correios.webservice.postagem.SQLException_Exception
 import br.com.correios.webservice.postagem.SigepClienteException
-import javax.jws.WebMethod
-import javax.jws.WebParam
-import javax.jws.WebResult
-import javax.jws.WebService
+import javax.jws.*
 import javax.xml.bind.annotation.XmlSeeAlso
 import javax.xml.datatype.XMLGregorianCalendar
 import javax.xml.ws.RequestWrapper
@@ -40,6 +37,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.FechaPlpResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun fechaPlp(
         @WebParam(name = "xml", targetNamespace = "") xml: String?,
         @WebParam(name = "idPlpCliente", targetNamespace = "") idPlpCliente: Long?,
@@ -62,6 +60,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.BuscaClienteResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun buscaCliente(
         @WebParam(name = "idContrato", targetNamespace = "") idContrato: String?,
         @WebParam(name = "idCartaoPostagem", targetNamespace = "") idCartaoPostagem: String?,
@@ -82,6 +81,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ValidaEtiquetaPLPResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun validaEtiquetaPLP(
         @WebParam(name = "numeroEtiqueta", targetNamespace = "") numeroEtiqueta: String?,
         @WebParam(name = "idPlp", targetNamespace = "") idPlp: Long?,
@@ -102,6 +102,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.VerificaDisponibilidadeServicoResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun verificaDisponibilidadeServico(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "numeroServico", targetNamespace = "") numeroServico: String?,
@@ -124,6 +125,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.GetStatusPLPResponse"
     )
     @Throws(SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun getStatusPLP(
         @WebParam(name = "arg0", targetNamespace = "") arg0: List<ObjetoPostal?>?,
         @WebParam(name = "arg1", targetNamespace = "") arg1: String?
@@ -142,6 +144,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.BloquearObjetoResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun bloquearObjeto(
         @WebParam(name = "numeroEtiqueta", targetNamespace = "") numeroEtiqueta: String?,
         @WebParam(name = "idPlp", targetNamespace = "") idPlp: Long?,
@@ -164,6 +167,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.SolicitaEtiquetasResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun solicitaEtiquetas(
         @WebParam(name = "tipoDestinatario", targetNamespace = "") tipoDestinatario: String?,
         @WebParam(name = "identificador", targetNamespace = "") identificador: String?,
@@ -186,6 +190,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.BuscaPagamentoEntregaResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun buscaPagamentoEntrega(
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
         @WebParam(name = "senha", targetNamespace = "") senha: String?
@@ -204,6 +209,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.GeraDigitoVerificadorEtiquetasResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun geraDigitoVerificadorEtiquetas(
         @WebParam(name = "etiquetas", targetNamespace = "") etiquetas: List<String?>?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
@@ -223,6 +229,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.CancelarObjetoResponse"
     )
     @Throws(AutenticacaoException::class, Exception_Exception::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun cancelarObjeto(
         @WebParam(name = "idPlp", targetNamespace = "") idPlp: Long?,
         @WebParam(name = "numeroEtiqueta", targetNamespace = "") numeroEtiqueta: String?,
@@ -243,6 +250,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.FechaPlpVariosServicosResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun fechaPlpVariosServicos(
         @WebParam(name = "xml", targetNamespace = "") xml: String?,
         @WebParam(name = "idPlpCliente", targetNamespace = "") idPlpCliente: Long?,
@@ -265,6 +273,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ValidarPostagemReversaResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun validarPostagemReversa(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "codigoServico", targetNamespace = "") codigoServico: Int?,
@@ -287,6 +296,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ValidaPlpResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun validaPlp(
         @WebParam(name = "cliente", targetNamespace = "") cliente: Long,
         @WebParam(name = "numero", targetNamespace = "") numero: String?,
@@ -312,6 +322,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.CancelarPedidoScolResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun cancelarPedidoScol(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "idPostagem", targetNamespace = "") idPostagem: String?,
@@ -333,6 +344,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ObterEmbalagemLRSResponse"
     )
     @Throws(SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun obterEmbalagemLRS(): List<EmbalagemLRSMaster?>?
 
     @WebMethod
@@ -348,6 +360,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ValidarPostagemSimultaneaResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun validarPostagemSimultanea(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "codigoServico", targetNamespace = "") codigoServico: Int?,
@@ -370,6 +383,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.BuscaServicosResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun buscaServicos(
         @WebParam(name = "idContrato", targetNamespace = "") idContrato: String?,
         @WebParam(name = "idCartaoPostagem", targetNamespace = "") idCartaoPostagem: String?,
@@ -390,6 +404,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.SolicitarPostagemScolResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun solicitarPostagemScol(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "xml", targetNamespace = "") xml: String?,
@@ -410,6 +425,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.GetStatusCartaoPostagemResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun getStatusCartaoPostagem(
         @WebParam(name = "numeroCartaoPostagem", targetNamespace = "") numeroCartaoPostagem: String?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
@@ -429,6 +445,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.SolicitaPLPResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun solicitaPLP(
         @WebParam(name = "idPlpMaster", targetNamespace = "") idPlpMaster: Long?,
         @WebParam(name = "numEtiqueta", targetNamespace = "") numEtiqueta: String?,
@@ -449,6 +466,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.SolicitaXmlPlpResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun solicitaXmlPlp(
         @WebParam(name = "idPlpMaster", targetNamespace = "") idPlpMaster: Long?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
@@ -468,6 +486,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.BuscaContratoResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun buscaContrato(
         @WebParam(name = "numero", targetNamespace = "") numero: String?,
         @WebParam(name = "diretoria", targetNamespace = "") diretoria: Long,
@@ -488,6 +507,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ConsultaSROResponse"
     )
     @Throws(SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun consultaSRO(
         @WebParam(name = "listaObjetos", targetNamespace = "") listaObjetos: List<String?>?,
         @WebParam(name = "tipoConsulta", targetNamespace = "") tipoConsulta: String?,
@@ -509,6 +529,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ObterClienteAtualizacaoResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun obterClienteAtualizacao(
         @WebParam(name = "cnpjCliente", targetNamespace = "") cnpjCliente: String?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
@@ -528,6 +549,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.IntegrarUsuarioScolResponse"
     )
     @Throws(AutenticacaoException::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun integrarUsuarioScol(
         @WebParam(name = "codAdministrativo", targetNamespace = "") codAdministrativo: Int?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
@@ -547,6 +569,7 @@ interface AtendeCliente {
         className = "br.com.correios.webservice.postagem.ConsultaCEPResponse"
     )
     @Throws(SQLException_Exception::class, SigepClienteException::class)
+    @HandlerChain(file = "handlers.xml")
     fun consultaCEP(
         @WebParam(name = "cep", targetNamespace = "") cep: String?
     ): EnderecoERP?

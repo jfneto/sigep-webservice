@@ -28,6 +28,7 @@ interface Service {
         className = "br.com.correios.webservice.resource.BuscaEventosResponse"
     )
     @Action(input = "buscaEventos", output = "http://resource.webservice.correios.com.br/Service/buscaEventosResponse")
+    @HandlerChain(file = "handlers.xml")
     fun buscaEventos(
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
         @WebParam(name = "senha", targetNamespace = "") senha: String?,
