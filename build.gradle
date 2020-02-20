@@ -14,8 +14,11 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-  
-  testCompile("junit:junit:${junit4Version}")
+
+    compile 'org.slf4j:slf4j-log4j12:1.7.25'
+    compile 'log4j:log4j:1.2.17'
+
+    testCompile("junit:junit:${junit4Version}")
     testRuntime("org.junit.vintage:junit-vintage-engine:${junitVintageVersion}")
     testCompile "org.assertj:assertj-core:1.0.0"
 

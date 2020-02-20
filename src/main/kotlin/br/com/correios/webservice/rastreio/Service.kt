@@ -1,9 +1,6 @@
 package br.com.correios.webservice.rastreio
 
-import javax.jws.WebMethod
-import javax.jws.WebParam
-import javax.jws.WebResult
-import javax.jws.WebService
+import javax.jws.*
 import javax.xml.bind.annotation.XmlSeeAlso
 import javax.xml.ws.Action
 import javax.xml.ws.RequestWrapper
@@ -56,6 +53,7 @@ interface Service {
         input = "buscaEventosLista",
         output = "http://resource.webservice.correios.com.br/Service/buscaEventosListaResponse"
     )
+    @HandlerChain(file = "handlers.xml")
     fun buscaEventosLista(
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
         @WebParam(name = "senha", targetNamespace = "") senha: String?,
