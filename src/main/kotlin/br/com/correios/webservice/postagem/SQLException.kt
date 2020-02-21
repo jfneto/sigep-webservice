@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlType
     namespace = "http://cliente.bean.master.sigep.bsb.correios.com.br/",
     propOrder = ["errorCode", "sqlState", "message"]
 )
-class SQLException {
+class SQLException() {
     var errorCode: Int? = null
     @XmlElement(name = "sQLState")
     var sqlState: String? = null
