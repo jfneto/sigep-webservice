@@ -546,7 +546,7 @@ interface AtendeCliente {
         @WebParam(name = "cepDestino", targetNamespace = "") cepDestino: String?,
         @WebParam(name = "usuario", targetNamespace = "") usuario: String?,
         @WebParam(name = "senha", targetNamespace = "") senha: String?
-    ): Boolean
+    ): String
 
     /*
 atualizaPagamentoNaEntrega
